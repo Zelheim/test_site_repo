@@ -16,7 +16,7 @@
 
 environment: production
 # Replace my-github-org and open-sdg-data-starter as needed.
-remote_data_prefix: "https://sdggif-data-canada-oddcmi-donnee.github.io/canada-gif-production-data"
+remote_data_prefix: "Zelheim.github.io/test_data_repo/"
 
 analytics:
   # For production, you likely want to enter a Google Analytics code below.
