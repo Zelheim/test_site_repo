@@ -10,7 +10,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://zelheim.github.io/test_data_repo/fr',
+  remoteDataBaseUrl: 'https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/fr',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -141,7 +141,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/test_site_repo/assets/css/style.css?v=20250715145547">
+        <link rel="stylesheet" href="/test_site_repo/assets/css/style.css?v=20250828154047">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -211,6 +211,8 @@ layout-goal
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdown-menu-more-info"><li class=" ">
     <a class="dropdown-item" href="/test_site_repo/fr/related-products">Produits connexes</a>
+</li><li class=" ">
+    <a class="dropdown-item" href="/test_site_repo/fr/methodology">Méthodologie de mesure des progrès</a>
 </li></ul>
             </li></ul>
     
@@ -344,7 +346,7 @@ data-event-label="high"
       </div>
       
       <div class="col-lg-2 d-none d-lg-block progress-column-header">
-        <span aria-hidden="true"></span>
+        <span aria-hidden="true">Où en sommes-nous par rapport à l'objectif 2030 ?</span>
       </div>
       
     </div>
@@ -403,9 +405,22 @@ data-event-label="high"
             </div>
             
             <div class="col-lg-2 goal-page-indicator-progress">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden"><strong>État du progrès actuel</strong></span>
               
     
+    
+        <div class="progress-status">
+        
+            <div class="progress-status-label">
+                Détérioration
+            </div>
+        
+        
+            <div class="progress-status-image">
+                <img src="/test_site_repo/assets/img/progress/red-gauge.png" alt="Détérioration" />
+            </div>
+        
+        </div>
     
 
 
@@ -452,7 +467,7 @@ data-event-label="high"
             </div>
             
             <div class="col-lg-2 goal-page-indicator-progress">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden"><strong>État du progrès actuel</strong></span>
               
 
             </div>
@@ -498,9 +513,22 @@ data-event-label="high"
             </div>
             
             <div class="col-lg-2 goal-page-indicator-progress">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden"><strong>État du progrès actuel</strong></span>
               
     
+    
+        <div class="progress-status">
+        
+            <div class="progress-status-label">
+                Progrès limités
+            </div>
+        
+        
+            <div class="progress-status-image">
+                <img src="/test_site_repo/assets/img/progress/orange-gauge.png" alt="Progrès limités" />
+            </div>
+        
+        </div>
     
 
 
@@ -547,9 +575,22 @@ data-event-label="high"
             </div>
             
             <div class="col-lg-2 goal-page-indicator-progress">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden"><strong>État du progrès actuel</strong></span>
               
     
+    
+        <div class="progress-status">
+        
+            <div class="progress-status-label">
+                Progrès limités
+            </div>
+        
+        
+            <div class="progress-status-image">
+                <img src="/test_site_repo/assets/img/progress/orange-gauge.png" alt="Progrès limités" />
+            </div>
+        
+        </div>
     
 
 
@@ -616,8 +657,20 @@ data-event-label="high"
             </div>
             
             <div class="col-lg-2 goal-page-indicator-progress">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden"><strong>État du progrès actuel</strong></span>
               
+    
+    
+        <div class="progress-status">
+        
+            <div class="progress-status-label">
+                Évaluation impossible
+            </div>
+        
+        
+        </div>
+    
+
 
             </div>
             
@@ -662,8 +715,24 @@ data-event-label="high"
             </div>
             
             <div class="col-lg-2 goal-page-indicator-progress">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden"><strong>État du progrès actuel</strong></span>
               
+    
+    
+        <div class="progress-status">
+        
+            <div class="progress-status-label">
+                Détérioration
+            </div>
+        
+        
+            <div class="progress-status-image">
+                <img src="/test_site_repo/assets/img/progress/red-gauge.png" alt="Détérioration" />
+            </div>
+        
+        </div>
+    
+
 
             </div>
             
@@ -711,8 +780,20 @@ data-event-label="high"
             </div>
             
             <div class="col-lg-2 goal-page-indicator-progress">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden"><strong>État du progrès actuel</strong></span>
               
+    
+    
+        <div class="progress-status">
+        
+            <div class="progress-status-label">
+                Évaluation impossible
+            </div>
+        
+        
+        </div>
+    
+
 
             </div>
             
@@ -774,9 +855,22 @@ data-event-label="high"
             </div>
             
             <div class="col-lg-2 goal-page-indicator-progress">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden"><strong>État du progrès actuel</strong></span>
               
     
+    
+        <div class="progress-status">
+        
+            <div class="progress-status-label">
+                Progrès limités
+            </div>
+        
+        
+            <div class="progress-status-image">
+                <img src="/test_site_repo/assets/img/progress/orange-gauge.png" alt="Progrès limités" />
+            </div>
+        
+        </div>
     
 
 
@@ -823,9 +917,22 @@ data-event-label="high"
             </div>
             
             <div class="col-lg-2 goal-page-indicator-progress">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden"><strong>État du progrès actuel</strong></span>
               
     
+    
+        <div class="progress-status">
+        
+            <div class="progress-status-label">
+                Détérioration
+            </div>
+        
+        
+            <div class="progress-status-image">
+                <img src="/test_site_repo/assets/img/progress/red-gauge.png" alt="Détérioration" />
+            </div>
+        
+        </div>
     
 
 
@@ -875,8 +982,20 @@ data-event-label="high"
             </div>
             
             <div class="col-lg-2 goal-page-indicator-progress">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden"><strong>État du progrès actuel</strong></span>
               
+    
+    
+        <div class="progress-status">
+        
+            <div class="progress-status-label">
+                Évaluation impossible
+            </div>
+        
+        
+        </div>
+    
+
 
             </div>
             
@@ -938,7 +1057,7 @@ data-event-label="high"
             </div>
             
             <div class="col-lg-2 goal-page-indicator-progress">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden"><strong>État du progrès actuel</strong></span>
               
 
             </div>
@@ -984,7 +1103,7 @@ data-event-label="high"
             </div>
             
             <div class="col-lg-2 goal-page-indicator-progress">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden"><strong>État du progrès actuel</strong></span>
               
 
             </div>
@@ -1047,7 +1166,7 @@ data-event-label="high"
             </div>
             
             <div class="col-lg-2 goal-page-indicator-progress">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden"><strong>État du progrès actuel</strong></span>
               
 
             </div>
@@ -1093,7 +1212,7 @@ data-event-label="high"
             </div>
             
             <div class="col-lg-2 goal-page-indicator-progress">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden"><strong>État du progrès actuel</strong></span>
               
 
             </div>
@@ -1156,9 +1275,22 @@ data-event-label="high"
             </div>
             
             <div class="col-lg-2 goal-page-indicator-progress">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden"><strong>État du progrès actuel</strong></span>
               
     
+    
+        <div class="progress-status">
+        
+            <div class="progress-status-label">
+                Détérioration
+            </div>
+        
+        
+            <div class="progress-status-image">
+                <img src="/test_site_repo/assets/img/progress/red-gauge.png" alt="Détérioration" />
+            </div>
+        
+        </div>
     
 
 
@@ -1205,7 +1337,7 @@ data-event-label="high"
             </div>
             
             <div class="col-lg-2 goal-page-indicator-progress">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden"><strong>État du progrès actuel</strong></span>
               
 
             </div>
@@ -1268,7 +1400,7 @@ data-event-label="high"
             </div>
             
             <div class="col-lg-2 goal-page-indicator-progress">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden"><strong>État du progrès actuel</strong></span>
               
 
             </div>
@@ -1317,8 +1449,20 @@ data-event-label="high"
             </div>
             
             <div class="col-lg-2 goal-page-indicator-progress">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden"><strong>État du progrès actuel</strong></span>
               
+    
+    
+        <div class="progress-status">
+        
+            <div class="progress-status-label">
+                Évaluation impossible
+            </div>
+        
+        
+        </div>
+    
+
 
             </div>
             
@@ -1380,7 +1524,7 @@ data-event-label="high"
             </div>
             
             <div class="col-lg-2 goal-page-indicator-progress">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden"><strong>État du progrès actuel</strong></span>
               
 
             </div>
@@ -1443,9 +1587,22 @@ data-event-label="high"
             </div>
             
             <div class="col-lg-2 goal-page-indicator-progress">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden"><strong>État du progrès actuel</strong></span>
               
     
+    
+        <div class="progress-status">
+        
+            <div class="progress-status-label">
+                Cible atteinte
+            </div>
+        
+        
+            <div class="progress-status-image">
+                <img src="/test_site_repo/assets/img/progress/target-achieved-gauge.png" alt="Cible atteinte" />
+            </div>
+        
+        </div>
     
 
 
@@ -1509,7 +1666,7 @@ data-event-label="high"
             </div>
             
             <div class="col-lg-2 goal-page-indicator-progress">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden"><strong>État du progrès actuel</strong></span>
               
 
             </div>
@@ -1558,9 +1715,22 @@ data-event-label="high"
             </div>
             
             <div class="col-lg-2 goal-page-indicator-progress">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden"><strong>État du progrès actuel</strong></span>
               
     
+    
+        <div class="progress-status">
+        
+            <div class="progress-status-label">
+                Détérioration
+            </div>
+        
+        
+            <div class="progress-status-image">
+                <img src="/test_site_repo/assets/img/progress/red-gauge.png" alt="Détérioration" />
+            </div>
+        
+        </div>
     
 
 
@@ -1624,9 +1794,22 @@ data-event-label="high"
             </div>
             
             <div class="col-lg-2 goal-page-indicator-progress">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden"><strong>État du progrès actuel</strong></span>
               
     
+    
+        <div class="progress-status">
+        
+            <div class="progress-status-label">
+                Cible atteinte
+            </div>
+        
+        
+            <div class="progress-status-image">
+                <img src="/test_site_repo/assets/img/progress/target-achieved-gauge.png" alt="Cible atteinte" />
+            </div>
+        
+        </div>
     
 
 
@@ -1693,8 +1876,20 @@ data-event-label="high"
             </div>
             
             <div class="col-lg-2 goal-page-indicator-progress">
-              <span class="visually-hidden"></span>
+              <span class="visually-hidden"><strong>État du progrès actuel</strong></span>
               
+    
+    
+        <div class="progress-status">
+        
+            <div class="progress-status-label">
+                Évaluation impossible
+            </div>
+        
+        
+        </div>
+    
+
 
             </div>
             
@@ -1801,12 +1996,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Chercher';</script>
 
-<script src='/test_site_repo/assets/js/sdg.js?v=20250715145547'></script>
+<script src='/test_site_repo/assets/js/sdg.js?v=20250828154047'></script>
 
 
     
     
-    <script src="/test_site_repo/assets/js/custom.js?v=20250715145547"></script><script>
+    <script src="/test_site_repo/assets/js/custom.js?v=20250828154047"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
