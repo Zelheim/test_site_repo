@@ -288,7 +288,7 @@ progress_status:
       image: assets/img/progress/red-gauge.png
       alt: status.deterioration
         
-remote_data_prefix: 'https://sdg-data-canada-odd-donnees.github.io/sdg-data-donnees-odd/'
+remote_data_prefix: "Zelheim.github.io/test_data_repo/"
 reporting_status:
   title: status.reporting_status
   description: status.status_description
